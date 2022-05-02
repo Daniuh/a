@@ -1,22 +1,31 @@
-const UserTable = () => {
+const UserTable = (props) => {
+  console.log(props.users);
   return (
     <table>
       <thead>
         <tr>
-          <th>Name</th>
-          <th>Username</th>
-          <th>Actions</th>
+          <th>Nombre</th>
+          <th>Nombre de usuario</th>
+          <th>Acciones</th>
         </tr>
       </thead>
       <tbody>
-        <tr>
-          <td>Name data</td>
-          <td>Username data</td>
-          <td>
-            <button className="button muted-button">Edit</button>
-            <button className="button muted-button">Delete</button>
-          </td>
-        </tr>
+        {props.users.length > 0 ? (
+          props.users.map((user) => (
+            <tr key={user.id}>
+              <td>{user.name}</td>
+              <td>{user.username}</td>
+              <td>
+                <button className="button muted-button">Editar</button>
+                <button className="button muted-button">Borrar</button>
+              </td>
+            </tr>
+          ))
+        ) : (
+          <tr>
+            <td colspan={3}>No hay usuarios</td>
+          </tr>
+        )}
       </tbody>
     </table>
   );
