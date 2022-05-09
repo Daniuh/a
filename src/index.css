@@ -354,12 +354,20 @@ template {
 
 html {
   box-sizing: border-box;
+  background-color: #000000;
+  padding: 350px;
 }
 
 *,
 *::before,
 *::after {
   box-sizing: inherit;
+  background-color: #99e3f2;
+  border-radius: 10px;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding: 10px;
 }
 
 figure {
@@ -378,7 +386,7 @@ html {
 
 body {
   color: #404040;
-  background: white;
+  background: #99e3f2;
   font-size: 1rem;
 }
 
@@ -781,9 +789,9 @@ dd {
 .button, a.button, button, [type=submit], [type=reset], [type=button] {
   -webkit-appearance: none;
   display: inline-block;
-  border: 1px solid #0366ee;
+  border: 1px solid #4b5869;
   border-radius: 4px;
-  background: #0366ee;
+  background: #4c525b;
   color: #ffffff;
   font-weight: 600;
   font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, Helvetica, Arial, sans-serif;
@@ -821,7 +829,7 @@ dd {
 a.accent-button {
   color: #ffffff;
   border: 1px solid #29de7d;
-  background: #29de7d;
+  background: #000000;
 }
 
 .accent-button:hover, .accent-button:focus, .accent-button:active,
@@ -836,16 +844,16 @@ a.accent-button:active {
 .muted-button,
 a.muted-button {
   background: transparent;
-  border: 1px solid #cdcdcd;
-  color: #4e4e4e;
+  border: 1px solid #000000;
+  color: #000000;
 }
 
 .muted-button:hover, .muted-button:focus, .muted-button:active,
 a.muted-button:hover,
 a.muted-button:focus,
 a.muted-button:active {
-  color: #4e4e4e;
-  border: 1px solid #818181;
+  color: #000000;
+  border: 1px solid #000000;
   background: transparent;
 }
 
@@ -870,7 +878,7 @@ a.full-button {
  */
 [type=color], [type=date], [type=datetime], [type=datetime-local], [type=email], [type=month], [type=number], [type=password], [type=search], [type=tel], [type=text], [type=url], [type=week], [type=time], select, textarea {
   display: block;
-  border: 1px solid #dedede;
+  border: 1px solid #000000;
   border-radius: 4px;
   padding: 0.75rem;
   outline: none;
@@ -883,7 +891,7 @@ a.full-button {
 }
 
 [type=color]:hover, [type=date]:hover, [type=datetime]:hover, [type=datetime-local]:hover, [type=email]:hover, [type=month]:hover, [type=number]:hover, [type=password]:hover, [type=search]:hover, [type=tel]:hover, [type=text]:hover, [type=url]:hover, [type=week]:hover, [type=time]:hover, select:hover, textarea:hover {
-  border: 1px solid #c5c5c5;
+  border: 1px solid #ffffff;
 }
 
 [type=color]:focus, [type=color]:active, [type=date]:focus, [type=date]:active, [type=datetime]:focus, [type=datetime]:active, [type=datetime-local]:focus, [type=datetime-local]:active, [type=email]:focus, [type=email]:active, [type=month]:focus, [type=month]:active, [type=number]:focus, [type=number]:active, [type=password]:focus, [type=password]:active, [type=search]:focus, [type=search]:active, [type=tel]:focus, [type=tel]:active, [type=text]:focus, [type=text]:active, [type=url]:focus, [type=url]:active, [type=week]:focus, [type=week]:active, [type=time]:focus, [type=time]:active, select:focus, select:active, textarea:focus, textarea:active {
@@ -894,6 +902,7 @@ a.full-button {
 textarea {
   overflow: auto;
   height: auto;
+  background-color: #8cbcfe;
 }
 
 fieldset {
@@ -983,15 +992,15 @@ table {
 }
 
 thead th {
-  border-bottom: 2px solid #dedede;
+  border-bottom: 2px solid #696262;
 }
 
 tfoot th {
-  border-top: 2px solid #dedede;
+  border-top: 2px solid #696262;
 }
 
 td {
-  border-bottom: 1px solid #dedede;
+  border-bottom: 1px solid #a9a9a9;
 }
 
 th,
@@ -1007,7 +1016,7 @@ caption {
 }
 
 .striped-table tbody tr:nth-child(odd) {
-  background-color: #f8f8f8;
+  background-color: #696262;
 }
 
 .contain-table {

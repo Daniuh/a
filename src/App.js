@@ -22,7 +22,12 @@ const App = () => {
 
   //Eliminar usuarios
   const deleteUser = (id) => {
-    setUsers(users.filter((user) => user.id !== id));
+    if(window.confirm("¿Seguro de borrar a este usuario?")){
+      setUsers(users.filter((user) => user.id !== id));
+      alert("Borrado con éxito");
+    }else{
+      alert("Casi crack :|");
+    }
   };
 
   //Editar usuario
@@ -45,11 +50,9 @@ const App = () => {
     setUsers(users.map(user => (user.id === id ? updateUser: user)))
   }
 
-
-
   return (
     <div className="container">
-      <h1>CRUD App with Hooks</h1>
+      <h1>Trabajo de práctica</h1>
       <div className="flex-row">
         <div className="flex-large">
           {
